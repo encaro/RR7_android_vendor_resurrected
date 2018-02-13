@@ -178,7 +178,6 @@ PRODUCT_PACKAGES += \
     ResurrectionStats \
     Trebuchet \
     AudioFX \
-    CMFileManager \
     Eleven \
     LockClock \
     CMSettingsProvider \
