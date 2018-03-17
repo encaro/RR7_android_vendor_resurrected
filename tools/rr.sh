@@ -56,5 +56,5 @@ echo -e ${ylw}" √ Build is Successfully Done! "${txtrst};
 echo -e "";
 echo -e ${blu}" 〉Powered by ANDROID ™  // NOUGAT"${txtrst};
 echo -e "";
-echo -e ${red}" 〉Enjoy the Resurrection Remix OS // #GETRESURRECTED "${txtrst};
+echo -e ${red}" 〉Enjoy the Resurrected Remix OS // #GETRESURRECTED "${txtrst};
 echo -e "";
