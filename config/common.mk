@@ -301,6 +301,15 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+# Needs for MTP Dirty Hack
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp
+
+ADDITIONAL_DEFAULT_PROPERTIES := \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    persist.service.adb.enable=1
+
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION = 5.8.5
