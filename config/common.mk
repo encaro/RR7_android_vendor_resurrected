@@ -163,7 +163,6 @@ PRODUCT_PACKAGES += \
 # Optional CM packages
 PRODUCT_PACKAGES += \
     libemoji \
-    Terminal \
     LiveWallpapersPicker \
     PhotoTable
 
@@ -175,7 +174,6 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     ResurrectionOTA \
-    ResurrectionStats \
     Trebuchet \
     AudioFX \
     Eleven \
@@ -206,34 +204,6 @@ endif
 PRODUCT_PACKAGES += \
     Exchange2
 
-# Extra tools in CM
-PRODUCT_PACKAGES += \
-    libsepol \
-    mke2fs \
-    tune2fs \
-    nano \
-    htop \
-    mkfs.ntfs \
-    fsck.ntfs \
-    mount.ntfs \
-    gdbserver \
-    micro_bench \
-    oprofiled \
-    sqlite3 \
-    strace \
-    pigz \
-    7z \
-    lib7z \
-    bash \
-    bzip2 \
-    curl \
-    powertop \
-    unrar \
-    unzip \
-    vim \
-    wget \
-    zip
-
 # Custom off-mode charger
 ifneq ($(WITH_CM_CHARGER),false)
 PRODUCT_PACKAGES += \
@@ -252,16 +222,6 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 endif
-
-# Openssh
-PRODUCT_PACKAGES += \
-    scp \
-    sftp \
-    ssh \
-    sshd \
-    sshd_config \
-    ssh-keygen \
-    start-ssh
 
 # rsync
 PRODUCT_PACKAGES += \
