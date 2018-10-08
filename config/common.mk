@@ -82,8 +82,7 @@ PRODUCT_COPY_FILES += \
 # Included prebuilt apk's
 PRODUCT_PACKAGES += \
     DeskClock \
-    NexusLauncher \
-    Wallpaper
+    NexusLauncher
 
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
@@ -173,7 +172,6 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    ResurrectionOTA \
     Trebuchet \
     AudioFX \
     Eleven \
@@ -187,7 +185,6 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     OmniJaws \
     ThemeInterfacer
-
 
 WITH_ROOT_METHOD ?= rootless
 ifeq ($(WITH_ROOT_METHOD), magisk)
@@ -272,7 +269,7 @@ ADDITIONAL_DEFAULT_PROPERTIES := \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION = 5.8.5
+PRODUCT_VERSION = 5.8.10
 ifneq ($(RR_BUILDTYPE),)
 RR_VERSION := RR-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(RR_BUILDTYPE)
 else
